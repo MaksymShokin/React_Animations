@@ -72,7 +72,7 @@ class App extends Component {
           timeout={{ enter: 400, exit: 2000 }}
           mountOnEnter
           unmountOnExit
-          classNames={{ enterActive: 'ModalOpen', exitActive: 'ModalClose' }}
+          classNames={{ enterActive: 'ModalOpen', exitActive: 'ModalClosed' }}
           // classNames='fade-slide'
         >
           <Modal closed={this.closeModal} />
