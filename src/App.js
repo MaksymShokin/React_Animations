@@ -58,6 +58,12 @@ class App extends Component {
           timeout={{ enter: 400, exit: 2000 }}
           mountOnEnter
           unmountOnExit
+          onEnter={console.log('1')}
+          onEntering={console.log('2')}
+          onEntered={console.log('3')}
+          onExit={console.log('1')}
+          onExiting={console.log('2')}
+          onExited={console.log('3')}
         >
           {state => <Modal show={state} closed={this.closeModal} />}
         </Transition>
